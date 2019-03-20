@@ -9,7 +9,8 @@ install:
   - git log -1 --pretty=oneline
 
 before_script:
-  - npm install -g gulp gulp-cli
+  - npm install gulp
+  - npm install gulp-cli
   - npm install jsonfile
 
 script:
