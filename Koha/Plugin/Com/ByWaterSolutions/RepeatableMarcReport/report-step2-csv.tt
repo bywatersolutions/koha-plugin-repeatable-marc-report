@@ -1,0 +1,3 @@
+[% FOREACH header IN result_headers %]"[% header %]"[% UNLESS loop.index == result_headers.size - 1 %],[% END %][% END %]
+[% FOREACH r IN result_loop %][% FOREACH datum IN r %]"[% datum %]"[% UNLESS loop.index == r.size - 1 %],[% END %][% END %]
+[% END %]
