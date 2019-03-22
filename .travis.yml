@@ -11,6 +11,7 @@ install:
 before_script:
   - npm install gulp
   - npm install gulp-cli
+  - npm install gulp-github-release
   - npm install jsonfile
 
 script:
