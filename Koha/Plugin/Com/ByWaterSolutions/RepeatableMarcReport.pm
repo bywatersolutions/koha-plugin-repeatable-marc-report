@@ -27,7 +27,7 @@ our $metadata = {
 'This plugin allows repeatable marc fields to be queried and exported',
     date_authored   => '2019-02-08',
     date_updated    => '1900-01-01',
-    minimum_version => '17.05.00.000',
+    minimum_version => '17.11.00.000',
     maximum_version => undef,
     version         => $VERSION,
 };
@@ -149,7 +149,7 @@ sub report_step2 {
     # Look up index of biblionumber here.
     while ( my $row = $sth2->fetchrow_arrayref() ) {
         my $biblionumber = @{$row}[$index];
-        my $rec = GetMarcBiblio($biblionumber);
+        my $rec = GetMarcBiblio(  { biblionumber => $biblionumber } );
         my @fields = $rec->field( $tag );
         for my $field ( @fields ) {
             for my $sub ( $field->subfield("$subfield") ) {
