@@ -13,6 +13,7 @@ before_script:
   - npm install gulp-cli
   - npm install gulp-github-release
   - npm install gulp-run
+  - npm install node-datetime
   - npm install jsonfile
 
 script:
