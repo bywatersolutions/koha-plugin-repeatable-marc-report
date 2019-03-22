@@ -1,12 +1,12 @@
 {
   "name": "koha-repeatable-marc-report",
-  "version": "0.0.2",
-  "previous_version": "0.0.1",
+  "version": "0.0.3",
+  "previous_version": "0.0.2",
   "description": "Koha Repeatable Marc Report",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
-    "gulp-github-release": "^1.1.5",
+    "gulp-github-release": "^1.2.1",
     "gulp-run": "^1.7.1"
   },
   "scripts": {
